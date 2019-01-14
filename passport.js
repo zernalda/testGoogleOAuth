@@ -11,8 +11,8 @@ const User = require('./models/users');
 // GOOGLE OAUTH STRATEGY
 passport.use('googleToken', GooglePlusTokenStrategy({
     // specify google client secret and key
-    clientID: '360390256826-dd7rk86a9i5ef2gbodpe922306a66ibv.apps.googleusercontent.com';
-    clientSecret:'4CPlnjoBoMRfZMdSk5IGeL-y';
+    clientID: '360390256826-dd7rk86a9i5ef2gbodpe922306a66ibv.apps.googleusercontent.com',
+    clientSecret:'4CPlnjoBoMRfZMdSk5IGeL-y'
 }, async (accessToken, refreshToken, profile, done) => {
     console.log('accessToken: ', accessToken);
     console.log('refreshToken: ', refreshToken);
